@@ -42,7 +42,7 @@ const Details: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-[10px] text-gray-500 uppercase tracking-wide font-bold">Local</p>
-                    <p className="text-lg font-bold text-gray-900 leading-tight">{COPY.DETAILS.LOCATION}</p>
+                    <p className="text-gray-900 leading-tight">{COPY.DETAILS.LOCATION}</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4 pb-3 border-b border-gray-100">
@@ -51,7 +51,7 @@ const Details: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-[10px] text-gray-500 uppercase tracking-wide font-bold">Horário</p>
-                    <p className="text-lg font-bold text-gray-900 leading-tight">{COPY.DETAILS.TIME}</p>
+                    <p className=" text-gray-900 leading-tight">{COPY.DETAILS.TIME}</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3 pt-1">
