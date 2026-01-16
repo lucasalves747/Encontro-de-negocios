@@ -1,4 +1,4 @@
-export const CHECKOUT_URL = "https://link.salee.ai/widget/survey/jxijnl5MdBJSwyZuGm8K";
+export const CHECKOUT_URL = "https://link.salee.ai/widget/survey/W22CT6QocucCxeXzNoy5";
 export const BRAND_COLOR = "#AA813C";
 
 // Placeholder images - In a real scenario, these would be replaced by the specific assets provided or hosted.
