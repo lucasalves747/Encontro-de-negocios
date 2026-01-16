@@ -12,7 +12,7 @@ function App() {
   return (
     <main className="w-full overflow-x-hidden min-h-screen">
       <Hero />
-      <Details />
+      <Details /> 
       <Experience />
       <Speaker />
       <Testimonials />

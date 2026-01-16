@@ -1,4 +1,4 @@
-export const CHECKOUT_URL = "https://bclub.global/pagamento-encontro-jack";
+export const CHECKOUT_URL = "https://link.salee.ai/widget/survey/jxijnl5MdBJSwyZuGm8K";
 export const BRAND_COLOR = "#AA813C";
 
 // Placeholder images - In a real scenario, these would be replaced by the specific assets provided or hosted.
