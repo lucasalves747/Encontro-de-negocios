@@ -25,7 +25,7 @@ const StickyBar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center max-w-4xl">
         <div className="hidden md:block">
             <p className="text-white font-bold">Encontro de Negócios</p>
-            <p className="text-xs text-brand-gold">24 de Janeiro • Jacksonville, FL</p>
+           
         </div>
         <div className="w-full md:w-auto">
           <Button variant="sticky" fullWidth={true} className="bg-gradient-to-r from-brand-gold to-[#d4af37] text-black">

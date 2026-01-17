@@ -17,7 +17,7 @@ export const COPY = {
     CTA: "Quero estar entre os empresários que mais crescem"
   },
   DETAILS: {
-    INTRO: "No dia 24 de janeiro, empresários e empreendedores com visão de crescimento vão se reunir para uma imersão de 6 horas, com foco total em:",
+    INTRO: "Empresários e empreendedores com visão de crescimento vão se reunir para uma imersão de 6 horas, com foco total em:",
     POINTS: [
       "Conexões estratégicas",
       "Visão de crescimento",
@@ -62,7 +62,7 @@ export const COPY = {
   ],
   TESTIMONIALS_CTA: "Quero fazer parte desse grupo seleto",
   URGENCY: {
-    ALERT: "O Encontro de Negócios acontece no sábado, 24 de janeiro.",
+    ALERT: "O Encontro de Negócios",
     TEXT: "As vagas são intencionalmente limitadas. Esse evento não é sobre volume, é sobre qualidade — e você pode estar nesse círculo. Uma única conversa pode mudar o rumo da sua empresa.",
     CTA: "Quero garantir minha vaga agora"
   },

@@ -15,10 +15,19 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   fullWidth = false
 }) => {
-  const baseStyles = "inline-flex items-center justify-center font-bold uppercase tracking-wider transition-all duration-300 transform active:scale-95 group focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-black";
+  // 🔗 Checkout dinâmico pela URL
+  const searchParams = new URLSearchParams(window.location.search);
+  const checkoutFromUrl = searchParams.get('checkout');
+
+  const checkoutUrl = checkoutFromUrl
+    ? decodeURIComponent(checkoutFromUrl)
+    : CHECKOUT_URL;
+
+  const baseStyles =
+    "inline-flex items-center justify-center font-bold uppercase tracking-wider transition-all duration-300 transform active:scale-95 group focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-black";
   
   const variants = {
-    primary: "bg-brand-gold text-black hover:bg-white hover:text-black py-4 px-8 rounded shadow-[0_0_20px_rgba(170,129,60,0.4)] hover:shadow-[0_0_30px_rgba(170,129,60,0.6)] text-sm md:text-base",
+    primary: "bg-brand-gold text-black hover:bg-white hover:text-black py-4 px-8 rounded shadow-[0_0_20px_rgba(170,129,60,0.4)] hover:shadow-[0_0_30px_rgba(170,12960,0.6)] text-sm md:text-base",
     outline: "border-2 border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-black py-3 px-8 rounded text-sm md:text-base",
     sticky: "bg-brand-gold text-black py-3 px-6 rounded-full font-bold shadow-lg text-sm"
   };
@@ -27,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <a 
-      href={CHECKOUT_URL}
+      href={checkoutUrl}
       target="_blank"
       rel="noopener noreferrer"
       className={`${baseStyles} ${variants[variant]} ${widthClass} ${className}`}

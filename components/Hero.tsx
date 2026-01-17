@@ -1,14 +1,16 @@
 import React from 'react';
 import { COPY } from '../constants';
 import Button from './Button';
-
-// 👇 importa direto do assets
 import heroBanner from '@/assets/imgHero.png';
 
 const Hero: React.FC = () => {
+  // 🔗 Lendo parâmetros da URL
+  const searchParams = new URLSearchParams(window.location.search);
+  const city = searchParams.get('city') || 'Jacksonville';
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl pt-8 pb-8 ">
+      <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl pt-8 pb-8">
         
         <div className="mb-6 inline-block animate-fade-in-down">
           <span className="bg-brand-gold/20 text-brand-gold border border-brand-gold/50 px-4 py-1 rounded-full text-xs md:text-sm font-semibold tracking-[0.2em] uppercase">
@@ -26,7 +28,7 @@ const Hero: React.FC = () => {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6 drop-shadow-2xl font-serif">
-          Jacksonville será o ponto de encontro dos{' '}
+          {city} será o ponto de encontro dos{' '}
           <span className="text-brand-gold">empresários que mais crescem</span> nos EUA.
         </h1>
 
