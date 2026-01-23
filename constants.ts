@@ -26,7 +26,7 @@ export const COPY = {
     LOCATION: "JHOTEL INDIGO JACKSONVILLE 9840 TAPESTRY PARK CIRCLE JACKSONVILLE FL 32246",
     TIME: "Das 2PM às 8PM (Horário Local – Eastern Time)",
     DISCLAIMER: "Vagas limitadas para garantir a qualidade do ambiente",
-    CTA: "Quero participar do Encontro de Negócios em Jacksonville"
+    CTA: "Quero participar do Encontro de Negócios"
   },
   EXPERIENCE: {
     HEADLINE: "Esse não é mais um evento motivacional.",
